@@ -225,7 +225,7 @@ text-align: right;
 #photos{
     clear: both;
     line-height: 0%;
-    column-count: 2;
+    column-count: 4;
     column-gap:  0;;
 
 }
@@ -234,12 +234,45 @@ text-align: right;
     width: 100%;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     #club-ethos {
         width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
 
     #menu {
         clear: left;
@@ -272,35 +305,14 @@ text-align: right;
         text-align: center;
         padding: 0 20px;
     }
+    #photos{
+        column-count: 3;
+    }
 }
 
-
-    #welcome {
-        padding: 30px 0;
-        margin: 0;
+@media screen and (max-width:800px) {
+    #photos{
+      column-count: 2;
     }
-
-    #left-about, #right-about {
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
-    #center-about {
-        clear: both;
-        width: 100%;
-        float: left;
-        padding: 0;
-    }
-
-    #times > div{
-        width: 100%;
-        clear: both;
-        height: 150px;
-        padding: 0;
-    }
-
-    hr {
-        display: none;
-    }
-} 
+    
+}
